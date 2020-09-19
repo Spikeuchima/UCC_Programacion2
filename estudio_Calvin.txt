@@ -1,0 +1,13 @@
+#algoritmo estudiante
+1. Calvin llama al profesor para tomar los cursos de programacion
+2. Profesor le dice a calvin que debe formarse en 2 materias: matematicas basica y algoritmos
+3. Los padres de calvin le advierten que si pierde matematicas o algoritmos debera hacer planas.
+4. Los padres le restringen la television para que Calvin se esfuerce en el estudio
+5. Calvin se dedica a repasar en vez de ver television
+6. Calvin se esfuerza en matematicas y en algoritmos
+7. Se hara entrega de notas para ver resultado de estudio de Calvin
+8. Calvin espera a sus padres por las notas
+9. Los padres llegan con las notas
+10. Si Calvin gana las materias puede seguir viendo sus series en television
+11. Si Calvin pierde matematicas hara plana con la frase "DEBO REPASAR MATEMÁTICAS " 
+12. Si Calvin pierde algoritmo hara plana con la frase "DEBO ESTUDIAR ALGORITMOS"

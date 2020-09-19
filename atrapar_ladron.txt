@@ -1,0 +1,13 @@
+#algorito atrapar ladron
+1. Investigadores buscan la piedra de cristal que se perdio del museo de Helsinki
+2. Hospedarse en el Hotel DUE en Helsinki
+3. Atender la llamada de informante que cobra por la informacion
+4. Definir la cita con hora, sitio y lugar junto con el valor de la informacion
+5. Llegar a la cita, se recibe la informacion y se paga por ella
+6. Se recibe llamada indicando que el ladron viajara a Argentina
+7. Hernandez va a la agencia de viaje y separa 2 pasajes para Argentina
+8. Viajar a Argentina y darse cuenta que el ladron no esta
+9. Informan que el ladron negociara la joya en Peru
+10. Ir a la agencia de viaje y separar 2 boletos a Peru
+11. Viajar a Peru y ubicar al ladron
+12. Capturar a el hombre diamante
