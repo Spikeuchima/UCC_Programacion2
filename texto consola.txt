@@ -1,0 +1,280 @@
+Microsoft Windows [Versión 10.0.16299.125]
+(c) 2017 Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\Oscar Uchima>mkdir evaluativo
+
+C:\Users\Oscar Uchima>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: F62A-DF6C
+
+ Directorio de C:\Users\Oscar Uchima
+
+19/09/2020  02:57 p. m.    <DIR>          .
+19/09/2020  02:57 p. m.    <DIR>          ..
+05/05/2020  03:36 p. m.    <DIR>          .cache
+05/05/2020  03:33 p. m.    <DIR>          .config
+13/09/2020  06:35 p. m.    <DIR>          .fontconfig
+23/04/2020  10:29 p. m.    <DIR>          .megabasterd7.24
+23/04/2020  10:29 p. m.    <DIR>          .megabasterd_old_backups
+15/09/2020  07:30 p. m.    <DIR>          .THypervBox
+12/04/2020  02:48 a. m.    <DIR>          3D Objects
+12/04/2020  02:48 a. m.    <DIR>          Contacts
+02/08/2020  12:26 p. m.    <DIR>          Desktop
+19/09/2020  01:15 p. m.    <DIR>          Downloads
+19/09/2020  02:57 p. m.    <DIR>          evaluativo
+12/04/2020  02:48 a. m.    <DIR>          Favorites
+12/04/2020  02:48 a. m.    <DIR>          Links
+19/09/2020  01:43 p. m.    <DIR>          OneDrive
+12/04/2020  02:48 a. m.    <DIR>          Saved Games
+10/08/2020  07:32 p. m.    <DIR>          Searches
+               0 archivos              0 bytes
+              18 dirs  303.445.471.232 bytes libres
+
+C:\Users\Oscar Uchima>del evaluativo
+C:\Users\Oscar Uchima\evaluativo\*, ¿Está seguro (S/N)? s
+
+C:\Users\Oscar Uchima>E:
+
+E:\>dir
+ El volumen de la unidad E es Datos
+ El número de serie del volumen es: F68C-EF68
+
+ Directorio de E:\
+
+30/08/2019  07:42 p. m.            64.678 dead2.jpg
+01/04/2020  05:11 a. m.    <DIR>          full backup
+24/03/2020  06:42 a. m.           164.083 han y chewie.jpg
+05/09/2020  02:49 p. m.    <DIR>          jdk-14.0.2+12
+01/06/2020  10:44 p. m.    <DIR>          Program Files
+14/07/2020  06:25 p. m.    <DIR>          rec
+12/07/2020  12:59 a. m.    <DIR>          Temp
+14/07/2020  06:44 p. m.    <DIR>          Uchima
+05/09/2020  12:50 p. m.    <DIR>          work1
+               2 archivos        228.761 bytes
+               7 dirs  308.577.169.408 bytes libres
+
+E:\>mkdir evaluativo
+
+E:\>cd evaluativo
+
+E:\evaluativo>dir
+ El volumen de la unidad E es Datos
+ El número de serie del volumen es: F68C-EF68
+
+ Directorio de E:\evaluativo
+
+19/09/2020  03:00 p. m.    <DIR>          .
+19/09/2020  03:00 p. m.    <DIR>          ..
+19/09/2020  02:17 p. m.               745 atrapar ladron.txt
+19/09/2020  02:47 p. m.               874 estudio Calvin.txt
+               2 archivos          1.619 bytes
+               2 dirs  308.577.161.216 bytes libres
+
+E:\evaluativo>certutil -hashfile atrapar ladron.txt SHA256
+No se esperaba más de 2 args, recibidos 3
+CertUtil: Demasiados argumentos
+
+Uso:
+  CertUtil [Opciones] -hashfile InFile [algoritmoHash]
+  Generar y mostrar hash de cifrado en un archivo
+
+Opciones:
+  -Unicode          -- Escribir salida redireccionada en Unicode
+  -gmt              -- Mostrar horas como GMT
+  -seconds          -- Mostrar horas con segundos y milisegundos
+  -v                -- Operación detallada
+  -privatekey       -- Mostrar los datos de clave privada y de contraseña
+  -pin PIN                  -- PIN de la tarjeta inteligente
+  -sid WELL_KNOWN_SID_TYPE  -- SID numérico
+            22 -- Sistema local
+            23 -- Servicio local
+            24 -- Servicio de red
+
+Algoritmos hash: MD2 MD4 MD5 SHA1 SHA256 SHA384 SHA512
+
+CertUtil -?              -- Mostrar una lista de verbos (lista de comandos)
+CertUtil -hashfile -?    -- Mostrar el texto de ayuda del verbo "hashfile"
+CertUtil -v -?           -- Mostrar todo el texto de ayuda de todos los verbos
+
+
+E:\evaluativo>certutil -hashfile atrapar_ladron.txt SHA256
+CertUtil: -hashfile error del comando: 0x80070002 (WIN32: 2 ERROR_FILE_NOT_FOUND)
+CertUtil: El sistema no puede encontrar el archivo especificado.
+
+E:\evaluativo>certutil -hashfile atrapar_ladron.txt SHA256
+SHA256 hash de atrapar_ladron.txt:
+c1a95db739f6dc96c33bae10cb1dbe86f35a7bd63e733aae943ce03338bebd56
+CertUtil: -hashfile comando completado correctamente.
+
+E:\evaluativo>certutil -hashfile atrapar_ladron.txt SHA256 | findstr /v hash
+c1a95db739f6dc96c33bae10cb1dbe86f35a7bd63e733aae943ce03338bebd56
+
+E:\evaluativo>certutil -hashfile atrapar_ladron.txt SHA256 | findstr /v hash > huellaladron.txt
+
+E:\evaluativo>certutil -hashfile estudio_Calvin.txt SHA256
+SHA256 hash de estudio_Calvin.txt:
+ed886047165992a39391b423c862d83174c9d1a7c4e8fc49885794e7af2d01fb
+CertUtil: -hashfile comando completado correctamente.
+
+E:\evaluativo>certutil -hashfile estudio_Calvin.txt SHA256 | findstr /v hash
+ed886047165992a39391b423c862d83174c9d1a7c4e8fc49885794e7af2d01fb
+
+E:\evaluativo>certutil -hashfile estudio_Calvin.txt SHA256 | findstr /v hash > huellacalvin.txt
+
+E:\evaluativo>dir
+ El volumen de la unidad E es Datos
+ El número de serie del volumen es: F68C-EF68
+
+ Directorio de E:\evaluativo
+
+19/09/2020  03:30 p. m.    <DIR>          .
+19/09/2020  03:30 p. m.    <DIR>          ..
+19/09/2020  02:17 p. m.               745 atrapar_ladron.txt
+19/09/2020  02:47 p. m.               874 estudio_Calvin.txt
+19/09/2020  03:30 p. m.                66 huellacalvin.txt
+19/09/2020  03:27 p. m.                66 huellaladron.txt
+               4 archivos          1.751 bytes
+               2 dirs  308.577.157.120 bytes libres
+
+E:\evaluativo>git --version
+git version 2.28.0.windows.1
+
+E:\evaluativo>git config--global -1
+git: 'config--global' is not a git command. See 'git --help'.
+
+E:\evaluativo>git config --global -1
+error: unknown switch `1'
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+E:\evaluativo>git config --global -l
+fatal: unable to read config file 'C:/Users/Oscar Uchima/.gitconfig': No such file or directory
+
+E:\evaluativo>git status
+fatal: not a git repository (or any of the parent directories): .git
+
+E:\evaluativo>git init
+Initialized empty Git repository in E:/evaluativo/.git/
+
+E:\evaluativo>git config --global user.name "oscar uchima"
+
+E:\evaluativo>git config --global user.email "loganuchima@gmail.com"
+
+E:\evaluativo>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        atrapar_ladron.txt
+        estudio_Calvin.txt
+        huellacalvin.txt
+        huellaladron.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+E:\evaluativo>git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+E:\evaluativo>git add .
+
+E:\evaluativo>git add .
+
+E:\evaluativo>git add .
+
+E:\evaluativo>git config core.autocrlf true
+
+E:\evaluativo>
+E:\evaluativo>git config core.autocrlf true
+
+E:\evaluativo>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   atrapar_ladron.txt
+        new file:   estudio_Calvin.txt
+        new file:   huellacalvin.txt
+        new file:   huellaladron.txt
+
+
+E:\evaluativo>git add .
+
+E:\evaluativo>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   atrapar_ladron.txt
+        new file:   estudio_Calvin.txt
+        new file:   huellacalvin.txt
+        new file:   huellaladron.txt
+
+
+E:\evaluativo>git rm --cached *.png
+fatal: pathspec '*.png' did not match any files
+
+E:\evaluativo>git commit -m "mi primer commit en GIT trabajo evaluativo"
+[master (root-commit) e23bc9a] mi primer commit en GIT trabajo evaluativo
+ 4 files changed, 28 insertions(+)
+ create mode 100644 atrapar_ladron.txt
+ create mode 100644 estudio_Calvin.txt
+ create mode 100644 huellacalvin.txt
+ create mode 100644 huellaladron.txt
+
+E:\evaluativo>git log
+commit e23bc9a1fd0c8e5102b7cb4cedb279e72f2ba8c3 (HEAD -> master)
+Author: oscar uchima <loganuchima@gmail.com>
+Date:   Sat Sep 19 16:04:36 2020 -0500
+
+    mi primer commit en GIT trabajo evaluativo
+
+E:\evaluativo>
