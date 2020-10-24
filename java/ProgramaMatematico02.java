@@ -1,7 +1,7 @@
 public class  ProgramaMatematico02 {
   public static void main(String[] args) {
     System.out.println(" ******************************* ");
-	System.out.println(" *  Autor: Luisa Palau         * ");
+	System.out.println(" *  Autor: Oscar Uchima        * ");
 	System.out.println(" *  Date: October 17st of 2020 * ");
 	System.out.println(" * Universidad Cooperativa     * ");
 	System.out.println(" *            de               * ");
