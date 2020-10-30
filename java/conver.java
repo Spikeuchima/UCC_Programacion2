@@ -9,7 +9,7 @@ public class conver
         binario(cifra);
         System.out.print("\nHexadecimal:\t");
         hexadecimal(cifra);
-   
+
     }
     //SE IMPLEMENTA UN METODO RECURSIVO PARA TRANSFORMARA A BINARIO LA CIFRA
     public static void binario(int N){
@@ -17,9 +17,9 @@ public class conver
         else{
             binario(N/2);
             System.out.print(N%2);
-        }  
+        }
     }
-    //SE IMPLEMENTA UN METODO RECURCIVO PARA TRANSFORMARA A HEXADECIMAL LA CIFRA
+    //SE IMPLEMENTA UN METODO RECURSIVO PARA TRANSFORMARA A HEXADECIMAL LA CIFRA
     public static void hexadecimal(int N){
         if(N < 16){
             if(N == 10) System.out.print("A");
